@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="display-container">
-            <input type="text" class="display">
-            <p class="result">73</p>
+            <input type="text" class="display" value="45+28">
+            <p class="result">= 73</p>
         </div>
 
-        <div class="buttons-container">
-            <button class="C">C</button>
-            <button class="()">()</button>
-            <button class="%">%</button>
-            <button class="+">+</button>
-            <button class="7">7</button>
-            <button class="8">8</button>
-            <button class="9">9</button>
-            <button class="-">-</button>
-            <button class="4">4</button>
-            <button class="5">5</button>
-            <button class="6">6</button>
-            <button class="*">*</button>
-            <button class="1">1</button>
-            <button class="2">2</button>
-            <button class="3">3</button>
-            <button class="/">/</button>
-            <button class="+/-">+/-</button>
-            <button class="0">0</button>
-            <button class=",">,</button>
-            <button class="=">=</button>
+        <div class="input-area">
+            <div class="buttons-container">
+                <button class="C operation-button">C</button>
+                <button class="() operation-button">()</button>
+                <button class="% operation-button">%</button>
+                <button class="+ operation-button">+</button>
+                <button class="7 number-button">7</button>
+                <button class="8 number-button">8</button>
+                <button class="9 number-button">9</button>
+                <button class="- operation-button">-</button>
+                <button class="4 number-button">4</button>
+                <button class="5 number-button">5</button>
+                <button class="6 number-button">6</button>
+                <button class="* operation-button">*</button>
+                <button class="1 number-button">1</button>
+                <button class="2 number-button">2</button>
+                <button class="3 number-button">3</button>
+                <button class="/ operation-button">/</button>
+                <button class="+/- operation-button">+/-</button>
+                <button class="0 operation-button">0</button>
+                <button class=", operation-button">,</button>
+                <button class="= operation-button">=</button>
+            </div>
         </div>
     </div>
 
