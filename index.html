@@ -12,32 +12,32 @@
 <body>
     <div class="container">
         <div class="display-container">
-            <input type="text" class="display" value="45+28">
-            <p class="result">= 73</p>
+            <input type="text" class="display-show" id="display" value="45+28" onclick="calculate()">
+            <p class="result-hide" id="result">= 73</p>
         </div>
 
         <div class="input-area">
             <div class="buttons-container">
-                <button class="C operation-button">C</button>
-                <button class="() operation-button">()</button>
-                <button class="% operation-button">%</button>
-                <button class="+ operation-button">+</button>
-                <button class="7 number-button">7</button>
-                <button class="8 number-button">8</button>
-                <button class="9 number-button">9</button>
-                <button class="- operation-button">-</button>
-                <button class="4 number-button">4</button>
-                <button class="5 number-button">5</button>
-                <button class="6 number-button">6</button>
-                <button class="* operation-button">*</button>
-                <button class="1 number-button">1</button>
-                <button class="2 number-button">2</button>
-                <button class="3 number-button">3</button>
-                <button class="/ operation-button">/</button>
-                <button class="+/- operation-button">+/-</button>
-                <button class="0 operation-button">0</button>
-                <button class=", operation-button">,</button>
-                <button class="= operation-button">=</button>
+                <button class="operation-button"   onclick="cleanDisplay()">C</button>
+                <button class="operation-button"   onclick="addOnDisplay(`(`)">()</button>
+                <button class="operation-button"   onclick="addOnDisplay(`%*`)">%</button>
+                <button class="operation-button"   onclick="addOnDisplay(`+`)">+</button>
+                <button class="number-button"      onclick="addOnDisplay(`7`)">7</button>
+                <button class="number-button"      onclick="addOnDisplay(`8`)">8</button>
+                <button class="number-button"      onclick="addOnDisplay(`9`)">9</button>
+                <button class="operation-button"   onclick="addOnDisplay(`-`)">-</button>
+                <button class="number-button"      onclick="addOnDisplay(`4`)">4</button>
+                <button class="number-button"      onclick="addOnDisplay(`5`)">5</button>
+                <button class="number-button"      onclick="addOnDisplay(`6`)">6</button>
+                <button class="operation-button"   onclick="addOnDisplay(`*`)">*</button>
+                <button class="number-button"      onclick="addOnDisplay(`1`)">1</button>
+                <button class="number-button"      onclick="addOnDisplay(`2`)">2</button>
+                <button class="number-button"      onclick="addOnDisplay(`3`)">3</button>
+                <button class="operation-button"   onclick="addOnDisplay(`/`)">/</button>
+                <button class="operation-button"   onclick="eraseFromDisplay()">E</button>
+                <button class="number-button"      onclick="addOnDisplay(`0`)">0</button>
+                <button class="operation-button"   onclick="addOnDisplay(`.`)">,</button>
+                <button class="operation-button"   onclick="getResult()">=</button>
             </div>
         </div>
     </div>

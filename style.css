@@ -43,23 +43,36 @@ body{
     background-color: #424242;
 }
 
-input{
+.display-show{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
     text-align: end;
     font-size: 40px;
     color: #0cc0df;
 }
 
-.result{
+.display-hide{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
     text-align: end;
     font-size: 30px;
     color: #006b7d;
 }
 
-.display{
-    width: 100%;
-    height: 50px;
-    background-color: transparent;
-    border: none;
+.result-show{
+    text-align: end;
+    font-size: 40px;
+    color: #0cc0df;
+}
+
+.result-hide{
+    text-align: end;
+    font-size: 30px;
+    color: #006b7d;
 }
 
 .input-area{
