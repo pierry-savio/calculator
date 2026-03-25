@@ -137,6 +137,35 @@ button:active{
     background-color: #bebebe;
 }
 
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 320px;
+}
+
 .github-username{
     color: #b7e4ff;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
 }
+
+.github-username:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+}
+
